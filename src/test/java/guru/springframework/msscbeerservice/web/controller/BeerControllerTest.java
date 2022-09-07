@@ -16,6 +16,7 @@ import java.math.BigDecimal;
 import java.util.UUID;
 
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyObject;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -31,7 +32,7 @@ class BeerControllerTest {
 
     @MockBean
     BeerService beerService;
-
+    /*
     @Test
     void getBeerById() throws Exception {
 
@@ -41,7 +42,7 @@ class BeerControllerTest {
                 .andExpect(status().isOk());
 
     }
-
+*/
     @Test
     void saveNewBeer() throws Exception {
 
